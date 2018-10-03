@@ -17,28 +17,27 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
-<body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   <header>
     <div class="upcontainer">
-      <div class="sociallinks">
+      <aside class="sociallinks">
         <a href="https://www.facebook.com/oceaclub"><i class="fab fa-facebook-f"></i></a>
         <a href="http://www.oceaclub.com/contact.php"><i class="far fa-envelope"></i></a>
         <a href="http://www.oceaclub.com/acces.php"><i class="fas fa-map-marker-alt"></i></a>
-      </div>
+      </aside>
       <aside class="reservationform">
-      <p>Réserver:</p>
-      <form action="/action_page.php">
-        <select name="réserver">
-          <option value="atelier">Une séance d'atelier</option>
-          <option value="badmington">Un cours de badmington</option>
-          <option value="UV">Une séance d'UV</option>
-        </select>
-        <button type="button" name="Go">Go</button>
-      </form>
-    </aside>
+        <p>Réserver:</p>
+        <form action="/action_page.php">
+          <select name="réserver">
+            <option value="atelier">Une séance d'atelier</option>
+            <option value="badmington">Un cours de badmington</option>
+            <option value="UV">Une séance d'UV</option>
+          </select>
+          <a class="gobutton" href="http://www.oceaclub.com/box/">GO</a>
+        </form>
+      </aside>
     </div>
     <div class="nav">
       <ul>
@@ -53,36 +52,38 @@
   <main>
     <div class="presentation">
       <div class="imgcontainer">
-      <div class="pcontainer"><!--transparent-->
-        <p>« Nous sommes Ocea. Nous représentons fièrement la pratique du fitness sur Lille et ses alentours.
-          Le sport est notre métier mais c'est avant tout notre passion. Nous sommes un grand club - mais à taille humaine - où chacun des membres de notre grande famille se met au service de notre lutte contre la sédentarité.
-          Nous connaissons les prénoms de nos adhérents. Nous sommes des passionnés. Nous sommes Ocea. »</p>
-        <p>- Bienvenue!</p>
-      </div>
+        <div class="pcontainer"><!--transparent-->
+        <!--  <img class="first" src="img/first.jpg" alt="sportifs">-->
+          <p>« <strong>Nous sommes</strong><span> Ocea</span>. Nous représentons fièrement la pratique du fitness sur Lille et ses alentours.<br>
+          Le sport est notre métier mais c'est avant tout<strong> notre passion</strong>. Nous sommes un grand club - mais à taille humaine - où chacun des membres de notre grande famille se met au service de notre lutte contre la sédentarité.<br>
+          Vous satisfaire est notre priorité de tous les jours. Nous ne vous proposons pas de cours sur écran mais <strong>plus de 100 cours collectifs par semaine</strong> encadrés par des éducateurs sportifs diplômés.<br>
+          Nous connaissons les prénoms de nos adhérents. Nous sommes des passionnés. Nous sommes <span>Ocea</span>. »</p>
+          <p>- Bienvenue!</p>
+        </div>
        <!-- end of the traparent p container-->
       </div>
-       /<!--end of image container-->
-      <section>
-        <h1>Ocea Sport</h1>
-        <div class="iconcontainer">
-          <i class="far fa-list-alt"></i>
-          <p>Un club ouvert 7 jours sur 7</p>
-        </div>
-        <div class="iconcontainer">
-          <i></i>
-          <p>Plus de 100 cours collectifs chaque semaine</p>
-        </div>
-        <div class="iconcontainer">
-          <i class="fas fa-bicycle"></i>
-          <p>6 salles dont un studio RPM avec plus de 70 vélos</p>
-        </div>
-        <div class="iconcontainer">
-          <i class="fas fa-arrows-alt-h"></i>
-          <p>7000 m² d'infrastructures</p>
-        </div>
-        <a href="http://www.oceaclub.com/decouverte.php">Testez nous</a>
-      </section>
-    </div><!--end of presentation container-->
+      /<!--end of image container-->
+      <section class="presentationlinks">
+           <h1>Ocea Sport</h1>
+           <div class="iconcontainer">
+             <h2 class="allweek">7/7</h2>
+             <p>Un club ouvert 7 jours sur 7</p>
+           </div>
+           <div class="iconcontainer">
+             <i class="fas fa-list-alt"></i>
+             <p>Plus de 100 cours collectifs chaque semaine</p>
+           </div>
+           <div class="iconcontainer">
+             <i class="fas fa-bicycle"></i>
+             <p>6 salles dont un studio RPM avec plus de 70 vélos</p>
+           </div>
+           <div class="iconcontainer">
+             <i class="fas fa-arrows-alt-h"></i>
+             <p>7000 m² d'infrastructures</p>
+           </div>
+           <a href="http://www.oceaclub.com/decouverte.php">Testez nous</a>
+         </section>
+     </div><!--end of presentation container-->
 
   </main>
 
