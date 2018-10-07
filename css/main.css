@@ -1,22 +1,24 @@
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+/**
+ * What follows is the result of much research on cross-browser styling. Credit
+ * left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen,
+ * and the H5BP dev community and team.
  */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/**
+ * ==========================================================================
+ * Base styles: opinionated defaults
+ * ==========================================================================
+ */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color       : #222;
+  font-size   : 1em;
+  line-height : 1.4;
 }
 
-/*
+/**
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
@@ -27,32 +29,29 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background  : #b3d4fc;
+  text-shadow : none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background  : #b3d4fc;
+  text-shadow : none;
 }
 
-/*
- * A better looking default horizontal rule
- */
+/* A better looking default horizontal rule */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display    : block;
+  height     : 1px;
+  margin     : 1em 0;
+  padding    : 0;
+  border     : 0;
+  border-top : 1px solid #ccc;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
+/**
+ * Remove the gap between audio, canvas, iframes, images, videos and the bottom
+ * of their containers: https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
 audio,
@@ -61,227 +60,521 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align : middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
+/* Remove default fieldset styles. */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  margin  : 0;
+  padding : 0;
+  border  : 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
+/* Allow only vertical resizing of textareas. */
 
 textarea {
-    resize: vertical;
+  resize : vertical;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
+/**
+ * ==========================================================================
+ * Browser Upgrade Prompt
+ * ==========================================================================
  */
 
-.hidden {
-    display: none !important;
+.browserupgrade {
+  margin     : 0.2em 0;
+  padding    : 0.2em 0;
+  color      : #000;
+  background : #ccc;
 }
 
-/*
+/**
+ * ==========================================================================
+ * Author's custom styles
+ * ==========================================================================
+ */
+
+body {
+  width       : 100%;
+  font-family : "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size   : 1.2em;
+}
+
+header {
+  width : 100%;
+}
+
+.upcontainer {
+  display       : flex;
+  width         : 100%;
+  height        : 7vh;
+  border-bottom : 1px;
+}
+
+.sociallinks {
+  display         : inline-flex;
+  width           : 15%;
+  height          : 5vh;
+  margin          : 5px auto 5px 200px;
+  align-items     : center;
+  flex-direction  : row;
+  justify-content : space-around;
+}
+
+.reservationform {
+  display         : flex;
+  width           : 23%;
+  height          : 5vh;
+  margin          : auto 100px auto auto;
+  align-items     : center;
+  font-size       : 0.6em;
+  justify-content : center;
+}
+
+.sociallinks a {
+  color      : #C0C0C0;
+  text-align : center;
+  font-size  : 15px;
+}
+
+.gobutton {
+  padding          : 3px 10px;
+  color            : white;
+  background-color : #ed008c;
+  text-decoration  : none;
+  font-size        : 0.85em;
+  font-weight      : normal;
+  font-weight      : bold;
+  letter-spacing   : 1px;
+}
+
+.nav ul {
+  display         : flex;
+  padding-left    : 195px;
+  color           : #333;
+  font-family     : "Montserrat", sans-serif;
+  list-style-type : none;
+}
+
+.nav li a {
+  display         : inline;
+  padding-right   : 18px;
+  padding-left    : 15px;
+  color           : #444444;
+  text-decoration : none;
+  font-size       : 0.7em;
+  font-weight: bold;
+  flex-direction  : row;
+}
+
+/* end of the header nav */
+
+/* start of the main */
+
+main {
+  width : 100%;
+}
+
+/* start of the image and p container */
+
+.imgcontainer {
+  display          : flex;
+  position         : relative;
+  width            : 100%;
+  height           : 96vh;
+  background-image : url(../img/first.jpg);
+  background-size  : cover;
+  align-items      : flex-end;
+}
+
+.pcontainer {
+  display          : flex;
+  position         : absolute;
+  padding          : 30px 60px 0 60px;
+  color            : white;
+  opacity          : 0.65;
+  background-color : black;
+  text-align       : justify;
+  align-items      : center;
+  font-size        : 0.85em;
+  justify-content  : center;
+  line-height      : 1.7em;
+}
+
+.rightside {
+  width           : 20%;
+  align-self      : flex-end;
+  justify-content : flex-end;
+}
+
+.pink {
+  color           : #ed008c;
+  text-decoration : none;
+  font-weight     : bold;
+}
+
+.white {
+  color       : white;
+  font-weight : bold;
+}
+/* end of the img container */
+
+/* start of the pink presentation links container */
+.presentationlinks {
+  width            : 100%;
+  height           : 50vh;
+  color            : white;
+  background-color : #ed008c;
+  text-align       : center;
+}
+
+#iconcontainer {
+  display         : flex;
+  align-content   : center;
+  justify-content : space-around;
+}
+
+h1 {
+  font-size       : 1.8em;
+  justify-content : center;
+}
+
+.presentationlinks i {
+  font-size : 3.8em;
+}
+
+.presentationlinks h3 {
+  font-size       : 0.7em;
+  font-weight     : normal;
+  justify-content : space-between;
+}
+
+b {
+  font-weight : bold;
+}
+
+article .iconcontainer {
+  justify-content : space-around;
+}
+
+h3 a {
+  margin-top       : 20px;
+  margin-bottom    : 20px;
+  padding          : 10px 24px;
+  color            : black;
+  border-radius    : 4px;
+  background-color : #ffff00;
+  text-decoration  : none;
+  text-transform   : uppercase;
+  font-size        : 0.8em;
+  font-weight      : bold;
+}
+/*end of the first pinkcontainer*/
+
+/*start of the first white container*/
+.contractandvideo {
+  width: 100%;
+  height: 97vh;
+  font-size: 0.87em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.contractandvideo h2 {
+  font-size: 1.2em;
+}
+iframe {
+  width: 640px;
+  height: 360px;
+}
+.bold {
+  font-weight: bold;
+}
+/*start of the second pink conatainer*/
+.pinkcontainer {
+  width: 100%;
+  background-color: #ed008c;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.itemcontainer {
+  color: white;
+  width: 18.5%;
+  font-size: 0.8em;
+  align-items: center;
+  text-align: center;
+
+}
+.vignette {
+  width: 250px;
+  height: auto;
+  padding-bottom: 15px;
+}
+.itemcontainer h2 {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #c70076;
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.itemcontainer button {
+  padding: 10px 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  font-size: 0.85em;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: white;
+  color: #333;
+}
+.itemcontainer a {
+  width: 18.5%;
+}
+/*end of the second pink container*/
+/*start of the second white container*/
+#whitecontainer {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.85em;
+}
+
+section .whitecontainer {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+/*start of the footer rules/*/
+footer {
+  background-color: #4c4c4c;
+  width: 100%;
+
+}
+
+#footercontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+ .footer {
+   font-size: 0.85em;
+   color: white;
+   font-style: normal;
+   padding-left: 1em;
+   list-style-type: none;
+ }
+section .footer {
+  width: 80%;
+}
+
+
+hr {
+  width: 80%;
+  size: 1px;
+  color: white;
+  justify-content: center;
+  margin: auto;
+/*  padding-left: 40px;
+  padding-right: 40px;*/
+
+}
+
+.footerendcontainer {
+  font-size: 0.85em;
+  color: white;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/**
+ * ==========================================================================
+ * Helper classes
+ * ==========================================================================
+ */
+
+/* Hide visually and from screen readers */
+
+.hidden {
+  display : none !important;
+}
+
+/**
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ * 1. For long content, line feeds are not interpreted as spaces and small
+ * width causes content to wrap 1 word per line:
+ * https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+  position    : absolute;
+  width       : 1px;
+  height      : 1px;
+  clip        : rect(0 0 0 0);
+  margin      : -1px;
+  padding     : 0;
+  overflow    : hidden;
+  border      : 0;
+  white-space : nowrap;
+  /* 1 */
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
+/**
+ * Extends the .visuallyhidden class to allow the element to be focusable when
+ * navigated to via the keyboard: https://www.drupal.org/node/897638
  */
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+  position    : static;
+  width       : auto;
+  height      : auto;
+  clip        : auto;
+  margin      : 0;
+  overflow    : visible;
+  white-space : inherit;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
+/* Hide visually and from screen readers, but maintain layout */
 
 .invisible {
-    visibility: hidden;
+  visibility : hidden;
 }
 
-/*
+/**
  * Clearfix: contain floats
  *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
+ * For modern browsers 1. The space content is one way to avoid an Opera bug
+ * when the `contenteditable` attribute is included anywhere else in the
+ * document. Otherwise it causes space to appear at the top and bottom of
+ * elements that receive the `clearfix` class. 2. The use of `table` rather than
+ * `block` is only necessary if using `:before` to contain the top-margins of
+ * child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:after,
+.clearfix:before {
+  content : " ";
+  display : table;
+  /* 1 */
+  /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear : both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+/**
+ * ==========================================================================
+ * EXAMPLE Media Queries for Responsive Design. These examples override the
+ * primary ('mobile first') styles. Modify as content requires.
+ * ==========================================================================
+ */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media
+  only screen
+  and (min-width : 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media
+  print,
+  (-webkit-min-device-pixel-ratio : 1.25),
+  (min-resolution                 : 1.25dppx),
+  (min-resolution                 : 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/**
+ * ==========================================================================
+ * Print styles. Inlined to avoid the additional HTTP request:
+ * https://www.phpied.com/delay-loading-your-print-css/
+ * ==========================================================================
+ */
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+@media
+  print {
+  *,
+  *:after,
+  *:before {
+    color              : #000 !important;
+    background         : transparent !important;
+    -webkit-box-shadow : none !important;
+    box-shadow         : none !important;
+    text-shadow        : none !important;
+    /* Black prints faster */
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration : underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content : " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content : " (" attr(title) ")";
+  }
+  /**
+  * Don't show links that are fragment identifiers, or use the `javascript:`
+  * pseudo protocol
+  */
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content : "";
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  pre {
+    white-space : pre-wrap !important;
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  blockquote,
+  pre {
+    border            : 1px solid #999;
+    page-break-inside : avoid;
+  }
+  /* Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  thead {
+    display : table-header-group;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  img,
+  tr {
+    page-break-inside : avoid;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  h2,
+  h3,
+  p {
+    widows  : 3;
+    orphans : 3;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after : avoid;
+  }
 }
